@@ -1,0 +1,58 @@
+#!/usr/bin/env ruby
+
+require 'note'
+
+note = Note::Application.new
+
+def help
+  puts ""
+  puts "Commands:"
+  puts "  note init              # Create .notes directory in your Home"
+  puts "  note new {filename}    # Create a new note with filename"
+  puts "  note show {filename}   # Display a note"
+  puts "  note edit {filename}   # Edit a note"
+  puts "  note delete {filename} # Delete a note"
+  puts "  note list              # List all notes"
+  puts "  note help              # Display this help"
+  puts ""
+end
+
+command = ARGV.shift
+
+case command
+when "init"
+  note.init
+  puts "Created notes direcotry in #{ENV['HOME']}/.notes"
+when "new"
+  filename = ARGV.shift
+  if filename
+    note.new(filename)
+  else
+    puts "Please specify a filename"
+  end
+when "show"
+  filename = ARGV.shift
+  if filename
+    note.show(filename)
+  else
+    puts "Please specify a filename"
+  end
+when "edit"
+  filename = ARGV.shift
+  if filename
+    note.edit(filename)
+  else
+    puts "Please specify a filename"
+  end
+when "delete"
+  filename = ARGV.shift
+  if filename
+    note.delete(filename)
+  else
+    puts "Please specify a filename"
+  end
+when "list"
+  note.list
+else
+  help
+end
