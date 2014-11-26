@@ -1,10 +1,10 @@
-require "note/version"
+require "dotnotes/version"
 
 # Don't overwrite default Exceptions but use them
 class NoteAlreadyExist < StandardError; end
 class NoteNotExist < StandardError; end
 
-module Note
+module Dotnotes
   class Application
 
     def initialize
@@ -94,6 +94,7 @@ module Note
       puts "  note edit {filename}   # Edit a note"
       puts "  note delete {filename} # Delete a note"
       puts "  note list              # List all notes"
+      puts "  note find {keyword}      # Check which files contain the keyword"
       puts "  note help              # Display this help"
       puts ""
     end

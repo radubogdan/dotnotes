@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'note'
+require 'dotnotes'
 
-note = Note::Application.new
+note = Dotnotes::Application.new
 
 command = ARGV.shift
 filename = ARGV.shift

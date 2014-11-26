@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'note/version'
+require 'dotnotes/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "note"
-  spec.version       = Note::VERSION
+  spec.name          = "dotnotes"
+  spec.version       = Dotnotes::VERSION
   spec.authors       = ["Radu-Bogdan Croitoru"]
   spec.email         = ["croitoruradubogdan@gmail.com"]
   spec.summary       = %q{Create notes from your terminal.}
   spec.description   = %q{Simple CLI Application to create and edit notes directly from terminal.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/radubogdan/dotnotes"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

@@ -1,3 +1,3 @@
-module Note
+module Dotnotes
   VERSION = "0.0.1"
 end

@@ -1,4 +1,4 @@
-# Note
+# .notes
 
 A CRUD note library. It will make a directory `.notes` in your HOME.
 You can create, read, update and destroy notes using your terminal.
@@ -7,7 +7,7 @@ You can create, read, update and destroy notes using your terminal.
 
 Install it yourself as:
 
-    $ gem install note
+    $ gem install dotnotes
 
 ## Usage
 
@@ -21,7 +21,7 @@ Install it yourself as:
 
 ## Contributing
 
-1. Fork it ( https://github.com/radubogdan/ruby-note/fork )
+1. Fork it ( https://github.com/radubogdan/dotnotes/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
