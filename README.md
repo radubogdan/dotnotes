@@ -16,8 +16,8 @@ Install it yourself as:
     note edit {filename}   # Edit a note
     note delete {filename} # Delete a note
     note list              # List all notes
+    note find {keyword}    # Check which files contain the keyword
     note help              # Display this help
-
 
 ## Contributing
 

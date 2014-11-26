@@ -81,6 +81,11 @@ module Note
       end
     end
 
+    # Find a keyword in a note
+    def find keyword
+      system("find #{@notes_path} -type f -print0 | xargs -0 grep -li #{keyword}")
+    end
+
     def help
       puts ""
       puts "Commands:"
